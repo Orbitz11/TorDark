@@ -30,7 +30,7 @@ logo2 = r"""
  ░                                
 """.splitlines()
 
-def print_side_by_side(l1, l2, color1=Fore.CYAN, color2=Fore.RED):
+def print_side_by_side(l1, l2, color1=Fore.MAGENTA, color2=Fore.WHITE):
     cols = shutil.get_terminal_size().columns
     max_len = max(len(l) for l in l1)
     for left, right in zip(l1, l2):
@@ -41,17 +41,18 @@ def print_header():
     print_side_by_side(logo1, logo2)
     time.sleep(0.5)
     info()
-    
+ 
+    print()  
     
 def info():
     cols = shutil.get_terminal_size().columns
     block = (
-        Fore.CYAN + Style.BRIGHT + "[ INFO ]" + Style.RESET_ALL + "\n"
-        + Fore.CYAN + '-' + Fore.RED   + " Name     :                     " + Fore.CYAN + "TorDark\n"
-        + Fore.CYAN + '-' + Fore.RED   + " Version  :                         " + Fore.CYAN + "0.2\n"
-        + Fore.CYAN + '-' + Fore.RED   + " Author   :                      " + Fore.CYAN + "Orbitz\n"
-        + Fore.CYAN + '-'    + Fore.RED   + " GitHub   : " + Fore.CYAN + "https://github.com/Orbitz11\n"
-        + Fore.CYAN + '-'    + Fore.RED   + " Email    : " + Fore.CYAN + "orbitz.business11@gmail.com\n"
+        Fore.MAGENTA + Style.BRIGHT + "[ INFO ]" + Style.RESET_ALL + "\n"
+        + Fore.MAGENTA + '-' + Fore.WHITE   + " Name     :                     " + Fore.MAGENTA + "TorDark\n"
+        + Fore.MAGENTA + '-' + Fore.WHITE   + " Version  :                         " + Fore.MAGENTA + "0.2\n"
+        + Fore.MAGENTA + '-' + Fore.WHITE   + " Author   :                      " + Fore.MAGENTA + "Orbitz\n"
+        + Fore.MAGENTA + '-'    + Fore.WHITE   + " GitHub   : " + Fore.MAGENTA + "https://github.com/Orbitz11\n"
+        + Fore.MAGENTA + '-'    + Fore.WHITE   + " Email    : " + Fore.MAGENTA + "orbitz.business11@gmail.com\n"
     )
 
     for line in block.splitlines():
@@ -60,6 +61,9 @@ def info():
 
 if __name__ == "__main__":
     print_header()
+
+
+
 
 
 
@@ -82,24 +86,26 @@ def menu():
                     exit()
                 else:
                     print(Fore.YELLOW + "Choose 1 or 2" + Style.RESET_ALL)
-        print(Fore.RED + Style.BRIGHT + '----------------------------------------------------------------------------------------------------------------------------------------------------------------------')
+        print(Fore.MAGENTA + Style.BRIGHT + '----------------------------------------------------------------------------------------------------------------------------------------------------------------------')
+        print(Fore.WHITE + 'Choose One Of This Choices')
+        print(Fore.MAGENTA + '----------------------------')
         print('\n')
         print('\n')
-        print(Fore.RED + '[' + Fore.CYAN + '00' + Fore.RED + ']' + Fore.CYAN + ' Exit')
-        print(Fore.RED + '[' + Fore.CYAN + '01' + Fore.RED + ']' + Fore.CYAN + ' All')
-        print(Fore.RED + '[' + Fore.CYAN + '02' + Fore.RED + ']' + Fore.CYAN + ' Search Engine')
-        print(Fore.RED + '[' + Fore.CYAN + '03' + Fore.RED + ']' + Fore.CYAN + ' Chatrooms')
-        print(Fore.RED + '[' + Fore.CYAN + '04' + Fore.RED + ']' + Fore.CYAN + ' Financial Services    ' + Fore.RED + '[' + Fore.CYAN + 'Markets' + Fore.RED + ']')
-        print(Fore.RED + '[' + Fore.CYAN + '05' + Fore.RED + ']' + Fore.CYAN + ' Commercial Services   ' + Fore.RED + '[' + Fore.CYAN + 'Markets' + Fore.RED + ']')
-        print(Fore.RED + '[' + Fore.CYAN + '06' + Fore.RED + ']' + Fore.CYAN + ' Drugs                 ' + Fore.RED + '[' + Fore.CYAN + 'Markets' + Fore.RED + ']')
-        print(Fore.RED + '[' + Fore.CYAN + '07' + Fore.RED + ']' + Fore.CYAN + ' Other')
-        print(Fore.RED + '[' + Fore.CYAN + '08' + Fore.RED + ']' + Fore.CYAN + ' File sharing          ' + Fore.RED + '[' + Fore.CYAN + 'Hosting Services' + Fore.RED + ']')
-        print(Fore.RED + '[' + Fore.CYAN + '09' + Fore.RED + ']' + Fore.CYAN + ' Web Hosting           ' + Fore.RED + '[' + Fore.CYAN + 'Hosting Services' + Fore.RED + ']')
-        print(Fore.RED + '[' + Fore.CYAN + '10' + Fore.RED + ']' + Fore.CYAN + ' Paste Bin             ' + Fore.RED + '[' + Fore.CYAN + 'Hosting Services' + Fore.RED + ']')
-        print(Fore.RED + '[' + Fore.CYAN + '11' + Fore.RED + ']' + Fore.CYAN + ' Blogs / Essays / Personal Pages / News')
-        print(Fore.RED + '[' + Fore.CYAN + '12' + Fore.RED + ']' + Fore.CYAN + ' Email / Messaging')
-        print(Fore.RED + '[' + Fore.CYAN + '13' + Fore.RED + ']' + Fore.CYAN + ' Social Networks')
-        print(Fore.RED + '[' + Fore.CYAN + '14' + Fore.RED + ']' + Fore.CYAN + ' wiki')
+        print(Fore.WHITE + '[' + Fore.MAGENTA + '00' + Fore.WHITE + ']' + Fore.MAGENTA + ' Exit')
+        print(Fore.WHITE + '[' + Fore.MAGENTA + '01' + Fore.WHITE + ']' + Fore.MAGENTA + ' All')
+        print(Fore.WHITE + '[' + Fore.MAGENTA + '02' + Fore.WHITE + ']' + Fore.MAGENTA + ' Search Engine')
+        print(Fore.WHITE + '[' + Fore.MAGENTA + '03' + Fore.WHITE + ']' + Fore.MAGENTA + ' Chatrooms')
+        print(Fore.WHITE + '[' + Fore.MAGENTA + '04' + Fore.WHITE + ']' + Fore.MAGENTA + ' Financial Services    ' + Fore.WHITE + '[' + Fore.MAGENTA + 'Markets' + Fore.WHITE + ']')
+        print(Fore.WHITE + '[' + Fore.MAGENTA + '05' + Fore.WHITE + ']' + Fore.MAGENTA + ' Commercial Services   ' + Fore.WHITE + '[' + Fore.MAGENTA + 'Markets' + Fore.WHITE + ']')
+        print(Fore.WHITE + '[' + Fore.MAGENTA + '06' + Fore.WHITE + ']' + Fore.MAGENTA + ' Drugs                 ' + Fore.WHITE + '[' + Fore.MAGENTA + 'Markets' + Fore.WHITE + ']')
+        print(Fore.WHITE + '[' + Fore.MAGENTA + '07' + Fore.WHITE + ']' + Fore.MAGENTA + ' Other')
+        print(Fore.WHITE + '[' + Fore.MAGENTA + '08' + Fore.WHITE + ']' + Fore.MAGENTA + ' File sharing          ' + Fore.WHITE + '[' + Fore.MAGENTA + 'Hosting Services' + Fore.WHITE + ']')
+        print(Fore.WHITE + '[' + Fore.MAGENTA + '09' + Fore.WHITE + ']' + Fore.MAGENTA + ' Web Hosting           ' + Fore.WHITE + '[' + Fore.MAGENTA + 'Hosting Services' + Fore.WHITE + ']')
+        print(Fore.WHITE + '[' + Fore.MAGENTA + '10' + Fore.WHITE + ']' + Fore.MAGENTA + ' Paste Bin             ' + Fore.WHITE + '[' + Fore.MAGENTA + 'Hosting Services' + Fore.WHITE + ']')
+        print(Fore.WHITE + '[' + Fore.MAGENTA + '11' + Fore.WHITE + ']' + Fore.MAGENTA + ' Blogs / Essays / Personal Pages / News')
+        print(Fore.WHITE + '[' + Fore.MAGENTA + '12' + Fore.WHITE + ']' + Fore.MAGENTA + ' Email / Messaging')
+        print(Fore.WHITE + '[' + Fore.MAGENTA + '13' + Fore.WHITE + ']' + Fore.MAGENTA + ' Social Networks')
+        print(Fore.WHITE + '[' + Fore.MAGENTA + '14' + Fore.WHITE + ']' + Fore.MAGENTA + ' wiki')
         print('\n')
         print('\n')
 
