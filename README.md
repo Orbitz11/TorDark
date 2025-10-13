@@ -1,5 +1,5 @@
 # TorDark
-<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/700653ff-bd6b-445e-b760-bebbfc648d03" />
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/1f6254bd-a099-4c2e-b3cb-224fb95c8355" />
 
 
 ## 📦 Installation
